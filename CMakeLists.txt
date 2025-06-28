@@ -21,6 +21,8 @@
 # St, Fifth Floor, Boston, MA 02110-1301  USA
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-error")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-error")
 
 add_subdirectory(third_party/LineairDB)
 set(LINEAIRDB_PLUGIN_DYNAMIC "ha_lineairdb")
